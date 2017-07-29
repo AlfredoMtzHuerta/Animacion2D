@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.alfredo.animacion2d.MainActivity">
+
+    <Button
+        android:id="@+id/btnCirculo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="13dp"
+        android:layout_marginRight="13dp"
+        android:layout_marginTop="40dp"
+        android:layout_toLeftOf="@+id/btnRectangulo"
+        android:layout_toStartOf="@+id/btnRectangulo"
+        android:onClick="onClick1"
+        android:text="Circulo" />
+
+    <Button
+        android:id="@+id/btnLinea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnCirculo"
+        android:layout_alignBottom="@+id/btnCirculo"
+        android:layout_centerHorizontal="true"
+        android:onClick="OnClickLinea"
+        android:text="Linea" />
+
+    <Button
+        android:id="@+id/btnOvalo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/btnLinea"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        android:onClick="Ovalo"
+        android:text="Ovalo" />
+
+    <Button
+        android:id="@+id/btnTexto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnCirculo"
+        android:layout_alignStart="@+id/btnCirculo"
+        android:layout_below="@+id/btnCirculo"
+        android:layout_marginTop="20dp"
+        android:onClick="Texto"
+        android:text="Texto" />
+
+    <Button
+        android:id="@+id/btnRectangulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnTexto"
+        android:layout_alignBottom="@+id/btnTexto"
+        android:layout_centerHorizontal="true"
+        android:onClick="Rectangulo"
+        android:text="Rectangulo" />
+
+    <Button
+        android:id="@+id/btnTodos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btnRectangulo"
+        android:layout_alignLeft="@+id/btnOvalo"
+        android:layout_alignStart="@+id/btnOvalo"
+        android:onClick="TextoBotonVisible"
+        android:text="Todos" />
+
+    <EditText
+        android:id="@+id/edTexto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/btnTexto"
+        android:layout_marginTop="50dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="escriba un texto" />
+
+    <Button
+        android:id="@+id/btnEnviar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/edTexto"
+        android:layout_marginTop="24dp"
+        android:onClick="EnviarTexto"
+        android:text="Enviar" />
+
+    <Button
+        android:id="@+id/btnEnviarTodo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:onClick="EnviarTodo"
+        android:text="Dirigir a todos los elementos"
+        android:layout_below="@+id/btnEnviar"
+        android:layout_alignLeft="@+id/btnTexto"
+        android:layout_alignStart="@+id/btnTexto"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp" />
+
+</RelativeLayout>
